@@ -1,0 +1,26 @@
+{
+  "name": "fly-csso",
+  "version": "0.0.1",
+  "description": "Fly plugin for CSSO",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morishitter/fly-csso/git"
+  },
+  "keywords": [
+    "fly",
+    "flyplugin",
+    "css",
+    "minify",
+    "optimize"
+  ],
+  "author": "Masaaki Morishita",
+  "license": "MIT",
+  "dependencies": {
+    "csso": "^1.3.11"
+  },
+  "devDependencies": {}
+}
