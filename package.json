@@ -1,6 +1,6 @@
 {
   "name": "fly-csso",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fly plugin for CSSO",
   "main": "index.js",
   "repository": {
