@@ -1,23 +1,40 @@
 {
   "name": "fly-csso",
-  "version": "0.1.0",
-  "description": "Fly plugin for CSSO",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/morishitter/fly-csso/git"
-  },
-  "keywords": [
-    "fly",
-    "flyplugin",
-    "css",
-    "minify",
-    "optimize"
-  ],
-  "author": "Masaaki Morishita",
+  "version": "0.0.0",
+  "description": "CSSO plugin for Fly.",
   "license": "MIT",
-  "dependencies": {
-    "csso": "^1.3.11"
+  "repository": "https://github.com/morishitter/fly-csso",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords":[
+    "fly",
+    "csso"
+  ],
+  "scripts": {
+    "lint": "eslint *.js",
+    "setup": "npm i && npm test",
+    "test": "npm run lint && tape test/*.js | tspec",
+    "build": "echo No build task specified.",
+    "deploy": "npm run test && git push origin master && npm publish",
+    "test-ci": "node --harmony --harmony_arrow_functions ./node_modules/tape/bin/tape test/*.js"
   },
-  "devDependencies": {}
+  "author": {
+    "name": "Masaaki Morishita",
+    "email": "ikasama3.0@gmail.com",
+    "url": "http://github.com/morishitter"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.11.0"
+  }
 }

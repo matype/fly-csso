@@ -4,41 +4,45 @@
   </a>
 </div>
 
-> [Fly][fly] plugin for [CSSO](https://github.com/css/csso)
->
-[![][fly-badge]][fly] ![][mit-badge]
+> [Csso](https://github.com/morishitter/fly-csso) plugin for _[Fly][fly]_.
+
+[![][fly-badge]][fly]
+[![npm package][npm-ver-link]][releases]
+[![][dl-badge]][npm-pkg-link]
+[![][travis-badge]][travis-link]
+[![][mit-badge]][mit]
 
 ## Usage
-
-To learn about what options are available, check out the [CSSO documentation](https://en.bem.info/tools/optimizers/csso/).
+> Check out the [documentation](PLUGIN_DOCUMENTATION) to see the available options.
 
 ### Install
 
-```shell
-$ npm install -D fly-csso
+```a
+npm install -D fly-csso
 ```
 
 ### Example
 
 ```js
-
-exports.csso = function* () {
-  yield this
-    .source('src/*.css')
-    .csso()
-    .target('dist')
+export default function* () {
+  yield ...
 }
 ```
 
-## License
+# License
 
-[MIT](http://opensource.org/licenses/MIT) © [Masaaki Morishita][author]
+[MIT][mit] © [Masaaki Morishita][author] et [al][contributors]
 
 
-[author]: https://github.com/morishitter
-
-[fly]: https://www.github.com/flyjs/fly
-
-[fly-badge]: https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
-[mit-badge]: https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
-
+[mit]:          http://opensource.org/licenses/MIT
+[author]:       http://github.com/morishitter
+[contributors]: https://github.com/morishitter/fly-csso/graphs/contributors
+[releases]:     https://github.com/morishitter/fly-csso/releases
+[fly]:          https://www.github.com/flyjs/fly
+[fly-badge]:    https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
+[mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+[npm-pkg-link]: https://www.npmjs.org/package/fly-csso
+[npm-ver-link]: https://img.shields.io/npm/v/fly-csso.svg?style=flat-square
+[dl-badge]:     http://img.shields.io/npm/dm/fly-csso.svg?style=flat-square
+[travis-link]:  https://travis-ci.org/morishitter/fly-csso
+[travis-badge]: http://img.shields.io/travis/morishitter/fly-csso.svg?style=flat-square
