@@ -4,7 +4,7 @@
   </a>
 </div>
 
-> [Csso](https://github.com/morishitter/fly-csso) plugin for _[Fly][fly]_.
+> [CSSO](https://github.com/css/csso) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
 [![npm package][npm-ver-link]][releases]
@@ -13,7 +13,7 @@
 [![][mit-badge]][mit]
 
 ## Usage
-> Check out the [documentation](PLUGIN_DOCUMENTATION) to see the available options.
+> Check out the [documentation](https://github.com/css/csso) to see the available options.
 
 ### Install
 
@@ -25,7 +25,10 @@ npm install -D fly-csso
 
 ```js
 export default function* () {
-  yield ...
+  yield this
+    .source("src/*.css")
+    .csso()
+    .target("dist")
 }
 ```
 
