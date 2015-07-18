@@ -15,7 +15,6 @@
     "css",
     "minify",
     "optimize"
->>>>>>> 6956dfde0c4e36e5bb285bf44a1f452c78808b27
   ],
   "scripts": {
     "lint": "eslint *.js",
